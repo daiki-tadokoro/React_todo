@@ -57,6 +57,7 @@ button:hover {
 .list-row {
   display: flex;
   align-items: center;
+  height: 36px;
   padding-bottom: 4px;
 }
 
