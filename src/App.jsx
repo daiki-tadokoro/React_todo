@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
+import { InputTodo } from "./components/inputTodo";
 
 export const App = () => {
   const [todoText, setTodoText] = useState("");
@@ -33,14 +34,11 @@ export const App = () => {
   };
   return (
     <>
-      <div className="input-area">
-        <input
-          placeholder="TODOを入力"
-          value={todoText}
-          onChange={onChangeTodoText}
-        />
-        <button onClick={onClickAdd}>追加</button>
-      </div>
+      <InputTodo
+        onClick={onClickAdd}
+        todoText={todoText}
+        onChange={onChangeTodoText}
+      />
       <div className="incomplate-area">
         <p className="title">未完了のTODO</p>
         <ul>
