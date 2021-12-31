@@ -1,11 +1,11 @@
 export const ComplateTodos = (props) => {
-  const { complateTodos, onClickBack } = props;
+  const { todos, onClickBack } = props;
   return (
     <>
       <div className="complate-area">
         <p className="title">完了のTODO</p>
         <ul>
-          {complateTodos.map((todo, index) => {
+          {todos.map((todo, index) => {
             return (
               <li key={todo}>
                 <div className="list-row">

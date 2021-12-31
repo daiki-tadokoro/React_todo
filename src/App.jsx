@@ -46,7 +46,7 @@ export const App = () => {
         onClickComplate={onClickComplate}
         onClickDelete={onClickDelete}
       />
-      <ComplateTodos complateTodos={complateTodos} onClickBack={onClickBack} />
+      <ComplateTodos todos={complateTodos} onClickBack={onClickBack} />
     </>
   );
 };
